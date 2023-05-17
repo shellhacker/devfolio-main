@@ -5,7 +5,6 @@ class ServicesUtils {
     StaticUtils.appDev,
     StaticUtils.uiux,
     StaticUtils.rapid,
-    StaticUtils.blog,
     StaticUtils.openSource,
   ];
 
@@ -13,7 +12,6 @@ class ServicesUtils {
     "Mobile App Development",
     "UI/UX Designing",
     "Rapid Prototyping",
-    "Technical Blog Writing",
     "Open Source - GitHub",
   ];
 
