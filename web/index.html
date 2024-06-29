@@ -22,13 +22,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="folio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/Icon-192.jpeg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.jpeg" />
+  <link rel="icon" type="image/jpeg" href="./favicon.jpeg" />
 
   <title>Shabanas</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="./manifest.json">
 
   <style>
     .lds-ripple {
@@ -100,9 +100,19 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('flutter-first-frame', function () {
+    //     navigator.serviceWorker.register('flutter_service_worker.js');
+    //   });
+    // }
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
+        navigator.serviceWorker.register('flutter_service_worker.js').then(function (registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function (error) {
+          console.error('Service Worker registration failed:', error);
+        });
       });
     }
   </script>

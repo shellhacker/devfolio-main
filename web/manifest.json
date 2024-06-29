@@ -1,6 +1,6 @@
 {
-    "name": "Hamza",
-    "short_name": "Hamza",
+    "name": "Shabanas",
+    "short_name": "Shabanas",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#000000",
@@ -10,14 +10,14 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "icons/Icon-192.jpeg",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/jpeg"
         },
         {
-            "src": "icons/Icon-512.png",
+            "src": "icons/Icon-512.jpeg",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/jpeg"
         }
     ]
 }

@@ -35,9 +35,8 @@ class _ServiceCardBackWidget extends StatelessWidget {
                       ),
                       actions: [
                         TextButton(
-                          onPressed: () => Navigator.pop(context),
-                          child: const Text("Back"),
-                        )
+                            onPressed: () => Navigator.pop(context),
+                            child: const Text("Back"))
                       ],
                       content: Column(
                         mainAxisSize: MainAxisSize.min,
@@ -46,8 +45,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://api.whatsapp.com/send?phone=917025361943',
-                            ),
+                                'https://api.whatsapp.com/send?phone=917025361943'),
                             color: const Color(0xff34CB62),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,

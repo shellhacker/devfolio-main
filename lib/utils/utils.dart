@@ -40,14 +40,14 @@ class StaticUtils {
   static const List<String> socialLinks = [
     "https://www.facebook.com/profile.php?id=100007351095344",
     "https://instagram.com/shabanaspb?igshid=ZDdkNTZiNTM=",
-    "",
-    "www.linkedin.com/in/shabanas-pb-87046718a",
+    "https://x.com/ShabanasPb?t=TsjjIhrGlleQuQzy8eBPng&s=08",
+    "https://www.linkedin.com/in/shabanas-pb-87046718a/",
     "https://github.com/shellhacker",
     "https://medium.com/@shabanaspb"
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
+      'https://drive.google.com/file/d/1eAuqJxsWlXLk0EtyTEziGjGqu95DdvxP/view?usp=drive_link';
 
   static const String gitHub = "https://github.com/shellhacker";
 }
