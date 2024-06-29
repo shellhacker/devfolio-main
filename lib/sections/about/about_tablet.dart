@@ -98,11 +98,11 @@ class AboutTab extends StatelessWidget {
                 children: const [
                   AboutMeData(
                     data: "Name",
-                    information: "Muhammad Hamza",
+                    information: "Shabanas PB",
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "26",
                   ),
                 ],
               ),
@@ -114,11 +114,11 @@ class AboutTab extends StatelessWidget {
                 children: const [
                   AboutMeData(
                     data: "Email",
-                    information: "hamza.6.shakeel@gmail.com",
+                    information: "shabanaspb@gmail.com",
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Attock, PK",
+                    information: "Kerala, IND",
                   ),
                 ],
               ),
@@ -149,21 +149,21 @@ class AboutTab extends StatelessWidget {
                   ),
                 ),
               ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                    children: WorkUtils.logos
-                        .asMap()
-                        .entries
-                        .map(
-                          (e) => CommunityIconBtn(
-                            icon: e.value,
-                            link: WorkUtils.communityLinks[e.key],
-                            height: WorkUtils.communityLogoHeight[e.key],
-                          ),
-                        )
-                        .toList()),
-              ),
+              // SingleChildScrollView(
+              //   scrollDirection: Axis.horizontal,
+              //   child: Row(
+              //       children: WorkUtils.logos
+              //           .asMap()
+              //           .entries
+              //           .map(
+              //             (e) => CommunityIconBtn(
+              //               icon: e.value,
+              //               link: WorkUtils.communityLinks[e.key],
+              //               height: WorkUtils.communityLogoHeight[e.key],
+              //             ),
+              //           )
+              //           .toList()),
+              // ),
             ],
           )
         ],

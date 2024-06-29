@@ -24,38 +24,35 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => AppProvider()),
-        ChangeNotifierProvider(create: (_) => DrawerProvider()),
-        ChangeNotifierProvider(create: (_) => ScrollProvider()),
-      ],
-      child: Consumer<AppProvider>(
-        builder: (context, value, _) => MaterialChild(
-          provider: value,
-        ),
-      ),
-    );
+        providers: [
+          ChangeNotifierProvider(create: (_) => AppProvider()),
+          ChangeNotifierProvider(create: (_) => DrawerProvider()),
+          ChangeNotifierProvider(create: (_) => ScrollProvider()),
+        ],
+        child: Consumer<AppProvider>(
+            builder: (context, value, _) => MaterialChild(provider: value)));
   }
 }
 
 class MaterialChild extends StatefulWidget {
-  final AppProvider provider;
   const MaterialChild({Key? key, required this.provider}) : super(key: key);
+
+  final AppProvider provider;
 
   @override
   State<MaterialChild> createState() => _MaterialChildState();
 }
 
 class _MaterialChildState extends State<MaterialChild> {
-  void initAppTheme() {
-    final appProviders = AppProvider.state(context);
-    appProviders.init();
-  }
-
   @override
   void initState() {
     initAppTheme();
     super.initState();
+  }
+
+  void initAppTheme() {
+    final appProviders = AppProvider.state(context);
+    appProviders.init();
   }
 
   @override
