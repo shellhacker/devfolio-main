@@ -1,5 +1,10 @@
 {
   "projects": {
-    "default": "mhmzdev-666"
-  }
+    "default": "my-web-51f9d",
+    "firebase use my-web-51f9d": "my-web-51f9d",
+    "y": "my-web-51f9d"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
